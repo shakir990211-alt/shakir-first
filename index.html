@@ -4,73 +4,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarZone | Celebrity World</title>
+    <title>Al-Falah Public High School | Sohbat Pur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">Star<span>Zone</span></a>
+            <a href="#home" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span>AL-FALAH <small>PUBLIC HIGH SCHOOL</small></span>
+            </a>
 
-            <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="celebrities.html">Celebrities</a></li>
-                <li><a href="news.html">News</a></li>
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <!-- Home -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <p class="tagline">WELCOME TO THE WORLD OF STARS</p>
-            <h1>Discover Your Favorite <span>Stars</span></h1>
+            <span class="welcome">WELCOME TO OUR SCHOOL</span>
+            <h1>Al-Falah Public<br><span>High School</span></h1>
+            <p class="location">📍 Sohbat Pur, Balochistan, Pakistan</p>
             <p>
-                Explore celebrity profiles, trending stories,
-                entertainment news, and the latest updates
-                from the world of fame.
+                Empowering young minds through quality education,
+                strong values, and a brighter future.
             </p>
-            <a href="celebrities.html" class="btn">Explore Celebrities</a>
+            <a href="#admission" class="btn">Apply for Admission →</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="book-icon">📚</div>
+            <h3>Learn Today</h3>
+            <p>Lead Tomorrow</p>
         </div>
     </section>
 
-    <section class="section">
-        <h2>Featured <span>Stars</span></h2>
-        <p class="section-desc">Meet some of the world's most popular celebrities.</p>
+    <!-- Highlights -->
+    <section class="highlights">
+        <div class="highlight">
+            <span>📖</span>
+            <h3>Quality Education</h3>
+            <p>Building strong academic foundations.</p>
+        </div>
+        <div class="highlight">
+            <span>👨‍🏫</span>
+            <h3>Dedicated Teachers</h3>
+            <p>Supporting every student's learning.</p>
+        </div>
+        <div class="highlight">
+            <span>🌟</span>
+            <h3>Bright Future</h3>
+            <p>Encouraging knowledge and confidence.</p>
+        </div>
+    </section>
 
-        <div class="card-container">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Celebrity portrait">
-                <div class="card-content">
-                    <h3>Hollywood Stars</h3>
-                    <p>Discover actors and personalities making headlines.</p>
-                    <a href="celebrities.html">View Profiles →</a>
-                </div>
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="section-heading">
+            <span class="eyebrow">GET TO KNOW US</span>
+            <h2>About Our School</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-illustration">
+                <span>🏫</span>
+                <h3>Education for Everyone</h3>
+                <p>Knowledge • Character • Success</p>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Celebrity portrait">
-                <div class="card-content">
-                    <h3>Fashion Icons</h3>
-                    <p>Explore the people shaping modern fashion and style.</p>
-                    <a href="celebrities.html">View Profiles →</a>
-                </div>
-            </div>
+            <div class="about-text">
+                <h3>Welcome to Al-Falah Public High School Sohbat Pur</h3>
+                <p>
+                    We believe education is the foundation of a successful
+                    society. Our goal is to help students develop their
+                    knowledge, skills, confidence, and good character.
+                </p>
+                <p>
+                    We aim to provide a supportive learning environment
+                    where students can explore their abilities, respect
+                    others, and prepare for a brighter future.
+                </p>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Celebrity portrait">
-                <div class="card-content">
-                    <h3>Rising Stars</h3>
-                    <p>Get to know emerging talents in entertainment.</p>
-                    <a href="news.html">Read Stories →</a>
-                </div>
+                <ul class="about-list">
+                    <li>✓ Focus on academic development</li>
+                    <li>✓ Encouragement and student support</li>
+                    <li>✓ Character building and discipline</li>
+                    <li>✓ A commitment to lifelong learning</li>
+                </ul>
+
+                <a href="#contact" class="btn">Contact Our School</a>
             </div>
         </div>
     </section>
 
+    <!-- Admission -->
+    <section class="section admission-section" id="admission">
+        <div class="section-heading">
+            <span class="eyebrow">START YOUR JOURNEY</span>
+            <h2>Online Admission Form</h2>
+            <div class="underline"></div>
+            <p>Fill in the details below to apply for admission.</p>
+        </div>
+
+        <form id="admissionForm" class="admission-form">
+            <h3 class="form-title">Student Information</h3>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="studentName">Student Full Name *</label>
+                    <input type="text" id="studentName" name="studentName"
+                           placeholder="Enter student name" required
+                           maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherName">Father's Full Name *</label>
+                    <input type="text" id="fatherName" name="fatherName"
+                           placeholder="Enter father's name" required
+                           maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Student Age *</label>
+                    <input type="number" id="age" name="age"
+                           min="3" max="30" placeholder="Enter age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="className">Class Applying For *</label>
+                    <select id="className" name="className" required>
+                        <option value="">Select class</option>
+                        <option>Nursery</option>
+                        <option>Prep</option>
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                        <option>Class 3</option>
+                        <option>Class 4</option>
+                        <option>Class 5</option>
+                        <option>Class 6</option>
+                        <option>Class 7</option>
+                        <option>Class 8</option>
+                        <option>Class 9</option>
+                        <option>Class 10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cnic">B-Form / CNIC Number</label>
+                    <input type="text" id="cnic" name="cnic"
+                           placeholder="e.g. 12345-1234567-1"
+                           maxlength="15">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="address">Home Address *</label>
+                    <textarea id="address" name="address" rows="3"
+                              placeholder="Enter complete home address"
+                              required maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentPhone">Student Contact Number</label>
+                    <input type="tel" id="studentPhone" name="studentPhone"
+                           placeholder="Enter phone number"
+                           maxlength="20">
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherPhone">Father's Contact Number *</label>
+                    <input type="tel" id="fatherPhone" name="fatherPhone"
+                           placeholder="e.g. 03XXXXXXXXX"
+                           required maxlength="20">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@email.com">
+                </div>
+            </div>
+
+            <div class="robot-check">
+                <input type="checkbox" id="robot" name="robot" required>
+                <label for="robot">I am not a robot</label>
+                <span>✓</span>
+            </div>
+
+            <p class="privacy-note">
+                Please ensure that all information is correct before submitting.
+            </p>
+
+            <button type="submit" class="btn submit-btn">
+                Submit Admission Application →
+            </button>
+
+            <div id="formMessage" class="form-message"
+                 role="status" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="section-heading">
+            <span class="eyebrow">WE ARE HERE TO HELP</span>
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+            <p>Have questions about admission? Get in touch with us.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span>📍</span>
+                <h3>Our Address</h3>
+                <p>Al-Falah Public High School</p>
+                <p>Sohbat Pur, Balochistan, Pakistan</p>
+            </div>
+
+            <div class="contact-card">
+                <span>📞</span>
+                <h3>Phone Number</h3>
+                <p>Add your school's official phone number here.</p>
+            </div>
+
+            <div class="contact-card">
+                <span>✉️</span>
+                <h3>Email Address</h3>
+                <p>Add your school's official email address here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 StarZone | Your Celebrity World</p>
+        <a href="#home" class="footer-logo">AL-FALAH PUBLIC HIGH SCHOOL</a>
+        <p>Sohbat Pur, Balochistan, Pakistan</p>
+        <p>Education • Discipline • Success</p>
+        <div class="footer-line"></div>
+        <p>© <span id="year"></span> Al-Falah Public High School. All rights reserved.</p>
     </footer>
 
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
